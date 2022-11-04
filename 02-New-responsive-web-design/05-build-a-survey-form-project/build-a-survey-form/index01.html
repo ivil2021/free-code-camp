@@ -1,15 +1,66 @@
-<h1 id="title">Survey Form</h1>
-<p id="description">Survey Form Description</p>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform </p>
 <form id="survey-form">
-  <label id="name-label" for="name">Enter your name:
-    <input id="name" type="text" name="name" required placeholder="Enter your name:">
+
+  <label id="name-label" for="name">Name:
+    <input id="name" type="text" name="name" required placeholder="Enter your name">
   </label>
 
-  <label id="email-label">Enter your email:
-    <input id="email" type="email" required placeholder="Enter your email:">
+  <label id="email-label">Email:
+    <input id="email" type="email" required placeholder="Enter your Email">
   </label>
 
-  <label id="number-label">Enter your number:
-    <input id="number" type="number" min="0" max="3" placeholder="Enter your number:">
+  <label id="number-label">Age (optional):
+    <input id="number" type="number" min="0" max="3" placeholder="Age">
   </label>
+
+  <label for="dropdown">How did you hear about us?
+    <select id="dropdown" name="dropdown">
+      <option value="">Select current role</option>
+      <option value="1">Student</option>
+      <option value="2">Full Time Job</option>
+      <option value="3">Full Time Learner</option>
+      <option value="4">Prefer not to say</option>
+      <option value="4">Other</option>
+    </select>
+  </label>
+
+  <label">Would you recommend freeCodeCamp to a friend?
+    <input type="radio" value="value" name="value"> Definitely
+    <input type="radio" value="value" name="value"> Maybe
+    <input type="radio" value="value" name="value"> Not sure
+  </label>
+
+  <label for="feature">What is your favorite feature of freeCodeCamp?
+    <select id="feature" name="feature">
+      <option value="">Select an option</option>
+      <option value="1">Challenges</option>
+      <option value="2">Projects</option>
+      <option value="3">Community</option>
+      <option value="4">Open Source</option>
+    </select>
+  </label>
+
+  <label">What would you like to see improved? (Check all that apply)
+    <input type="checkbox" value="value" name="value"> Front-end Projects
+    <input type="checkbox" value="value" name="value"> Back-end Projects
+    <input type="checkbox" value="value" name="value"> Data Visualization
+    <input type="checkbox" value="value" name="value"> Challenges
+    <input type="checkbox" value="value" name="value"> Open Source Community
+    <input type="checkbox" value="value" name="value"> Gitter help rooms
+    <input type="checkbox" value="value" name="value"> Videos
+    <input type="checkbox" value="value" name="value"> City Meetups
+    <input type="checkbox" value="value" name="value"> Wiki
+    <input type="checkbox" value="value" name="value"> Forum
+    <input type="checkbox" value="value" name="value"> Additional Courses
+  </label>
+
+  <label>Any comments or suggestions?
+    <textarea placeholder="Enter your comment here..."></textarea>
+  </label>
+
+  <label for="submit">
+    <input id="submit" type="submit" value="Submit">
+  </label>
+
 </form>
