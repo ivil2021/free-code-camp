@@ -35,29 +35,33 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .bb1a {
   width: 70%;
-  height: 10%;
-  background-color: var(--building-color1);
-  background: linear-gradient(--building-color1, --window-color1);
-  /* background: linear-gradient(#e66465, #9198e5); */
 }
+
 .bb1b {
   width: 80%;
-  height: 10%;
-  background-color: var(--building-color1);
 }
 
 .bb1c {
   width: 90%;
-  height: 10%;
-  background-color: var(--building-color1);
 }
-
 .bb1d {
   width: 100%;
   height: 70%;
-  background-color: var(--building-color1);
+  background: linear-gradient(
+      orange,
+      var(--building-color1),
+      var(--window-color1)
+    );
+}
+.bb1-window {
+  height: 10%;
+  background: linear-gradient(
+      var(--building-color1),
+      var(--window-color1)
+    );
 }
 
 .bb2 {
